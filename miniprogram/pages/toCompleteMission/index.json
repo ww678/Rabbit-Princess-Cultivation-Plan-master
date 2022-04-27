@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "今日任务",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

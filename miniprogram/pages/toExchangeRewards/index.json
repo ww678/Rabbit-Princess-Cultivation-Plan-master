@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "兑换奖励",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

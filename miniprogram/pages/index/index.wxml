@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="bg-image" mode="widthFix" src="./IMG_index.png"></image>
+  <view class="integral">我的积分:{{userIntegral || 0}}</view>
+  <view class="nowDate"><span style="margin-left: 15%">今天{{nowDate}}我们在一起</span><span style="font-weight: bold;color: rgb(218, 102, 121);">{{towDaysBetween}}</span>天啦！
+  </view>
+
+  <view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power">
+    <view wx:if="{{power.showItem}}">
+      <view wx:key="title" wx:for="{{power.item}}">
+        <view class="power_item" bindtap="jumpPage" data-page="{{item.page}}">
+          <view class="power_item_title">{{item.title}}</view>
+          <image class="power_item_icon" src="../../images/arrow.svg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+
+</view>
